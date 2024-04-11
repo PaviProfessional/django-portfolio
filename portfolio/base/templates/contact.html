@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Talk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        font-family:"montserrt",sans-serif;
+        box-sizing:boder-box;
+        }
+        body{
+            background:rgb(220, 192, 201);
+            min-height:100vh;
+            margin:20px;
+        }
+        .contact-info{
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            align-items:center;
+            justify-content:center;
+            padding: 0 20px;
+            margin-top:200px ;
+            margin-left: 60px;
+        }
+        .card{
+            background-color:black;
+            padding:0 20px;
+            margin:0 10px;
+            height: 200px;
+            width:calc(33% - 20px);
+            display: flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            color:white;
+            cursor:pointer;
+        }
+        .card-icon{
+            font-size:28px;
+            background:pink;
+            width:60px;
+            height: 60px;
+            text-align:center;
+            border-radius:50%;
+            transition:0.3s linear;
+            line-height:60px;
+        }
+        .card:hover .card-icon{
+            background:none;  
+            color:pink;
+            transform:scale(1.6);      
+        }
+        .card p{
+            margin-top:20px;
+            font-weight:300;
+            letter-spacing:2px;
+            max-height:0;
+            opacity: 0;
+            transition:0.3s linear;
+
+        }
+        .card:hover p{
+            max-height:40px;
+            opacity: 1;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="center fa-solid fa-hand">Let's Talk to me</h1>
+    <div class="contact-info">
+        <div class="card">
+            <i class="card-icon fa-solid fa-envelope"></i>
+            <p>pavi.professional15@gmail.com</p>
+        </div>
+        <div class="card">
+            <i class="card-icon fa-solid fa-phone"></i>
+            <p>7010831164</p>
+        </div>
+        <div class="card">
+            <i class="card-icon fa-solid fa-map-marker-alt"></i>
+            <p>Tamilnadu,INDIA</p>
+        </div>
+   
+    </div>
+     
+    
+</body>
+</html>

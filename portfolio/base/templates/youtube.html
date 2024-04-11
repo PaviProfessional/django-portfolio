@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .container{
+            display:flex;
+            gap:30px;
+            margin: 50px;
+        }
+        img{
+            height:450px;
+            width:550px;
+            padding-top:50px;
+        }
+        h1,h2{
+            color:blue;
+        }
+        .description{
+            margin:40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="{% static 'images/youtube.png'%}" alt="" >
+        </div>
+        <div class="description">
+            <p><h1>Project Title:YouTube Clone</h1>
+                   <h2>Key Features:</h2>
+
+                   <h3>Video Viewing:</h3> Users can browse and watch videos on the platform.
+                   <h3>Search Functionality:</h3> Users can search for videos using a search bar.
+                   <h3>Video Player:</h3> Videos are played using a custom video player that supports basic controls 
+                   such as play, pause, and volume control.
+                   <h3>Responsive Design:</h3> The website is designed to be responsive,
+                   ensuring it looks good and functions well on different devices and screen sizes.
+                   
+                   <h2>Technologies Used:</h2>
+
+                   <h3>HTML:</h3> Markup language for structuring the web pages.
+                   <h3>CSS:</h3> Stylesheets for styling the web pages and making them visually appealing.
+                   <h3>JavaScript:</h3>Programming language for adding interactivity and dynamic behavior to the website
+                   <h3>Future Improvements:</h3>
+                   
+                   Adding more advanced features such as user authentication, video upload, and comments.
+                   Improving the video player with additional controls and features.
+                   Enhancing the user interface and overall user experience of the website.
+                   </p>
+                </div>
+            </div>
+    
+</body>
+</html>
